@@ -11,8 +11,8 @@ public class MonthTest {
 
         int[] temps = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14,18};   //набор данных о продажах конкретного предприятия по месяцам
 
-        int expectedDay = 3;
-        int actualDay = service.getMinDay(temps);
+        int expectedMoth = 1;
+        int actualMoth = service.getMinmoth(temps);
 
         Assertions.assertEquals(expectedDay, actualDay);
     }

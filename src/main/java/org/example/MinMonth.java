@@ -1,10 +1,9 @@
 package org.example;
 
 
-
-public class minMonth {
+public class MinMonth {
     //пример
-    public int minSales(long [] sales) {
+    public int minSales(int[] sales) {
         int minMonth = 0; // номер месяца с минимальными продажами среди просмотренных ранее
 
         for (int i = 0; i < sales.length; i++) {

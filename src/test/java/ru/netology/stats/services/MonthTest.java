@@ -6,8 +6,8 @@ import org.junit.jupiter.api.Test;
 public class MonthTest {
 
     @Test
-    public void shouldFindBetweenEnds() {
-        MinMonth minMonth = new MinMonth();
+    public void minMonth() {
+        minMonth minMonth = new MinMonth();
 
         int[] Month = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};   //набор данных о продажах конкретного предприятия по месяцам
 

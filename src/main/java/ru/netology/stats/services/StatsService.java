@@ -1,9 +1,9 @@
-package org.example;
+package ru.netology.stats.services;
 
 
-public class MinMonth {
+public class StatsService {
     //пример
-    public int minSales(int[] sales) {
+    public static int minSales(int[] sales) {
         int minMonth = 0; // номер месяца с минимальными продажами среди просмотренных ранее
 
         for (int i = 0; i < sales.length; i++) {

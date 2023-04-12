@@ -1,4 +1,5 @@
-import org.example.MinMonth;
+package ru.netology.stats.services;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -6,14 +7,14 @@ import org.junit.jupiter.api.Test;
 public class MonthTest {
 
     @Test
-    public void minMonth() {
-        minMonth minMonth = new MinMonth();
+    public void StatsServiceMonth() {
+        StatsService service = new StatsService();
 
         int[] Month = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};   //набор данных о продажах конкретного предприятия по месяцам
 
         int expectedMonth = 1;
 
-        Assertions.assertEquals(expectedMonth, minMonth.minSales(Month));
+        Assertions.assertEquals(expectedMonth, StatsService.minSales(Month));
     }
 
 //    @Test //сумму всех продаж

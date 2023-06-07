@@ -15,13 +15,14 @@ public class MonthTest {
         }
     }
 
-    @Test //среднюю сумму продаж в месяц
+    @Test //среднюю
     public static void StatsServiceMonthAverage() {
         int[] month = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int sum = 0;
         for (int i : month) {
             sum += i;
         }
+        //System.out.println("Средние сумму продаж в месяц равна ("+sum+")");
     }
 
     @Test //min
@@ -46,4 +47,37 @@ public class MonthTest {
             }
         }
     }
+
+    @Test //среднюю минимальное
+    public static void StatsServiceMonthAverageMin() {
+        int[] month = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int sum = 0;
+        for (int a : month) {
+            sum += a;//a- среднее
+            int min = month[0];
+            for (int i : month) {
+                if (a < min) {
+                    min = i;
+                }
+            }
+        }
+    }
+
+    @Test //среднюю Максимальное
+    public static void StatsServiceMonthAverageMax() {
+        int[] month = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int sum = 0;
+        for (int a : month) {
+            sum += a;//a- среднееint
+            int max = month[0];
+            for (int i : month) {
+                if (a > max) {
+                    max = i;
+                }
+            }
+        }
+    }
+
+
+// End Class MonthTest
 }
